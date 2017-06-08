@@ -1,0 +1,59 @@
+body {
+
+  background-color: #303030;
+}
+
+
+.main-content h1 {
+  text-transform: uppercase;
+  color: $white;
+  font-weight: bold;
+  font-size: rem-calc(76);
+  line-height: 1.2;
+}
+
+.main-content h2 {
+  text-transform: uppercase;
+  color: $primary-color;
+  font-weight: bold;
+  font-size: rem-calc(185);
+  line-height: 1.0;
+
+}
+
+.main-content p {
+  color: $primary-color;
+}
+.poster-info p {
+  color: $primary-color;
+  font-size: rem-calc(20);
+  margin: rem-calc(40 0);
+}
+
+
+.button link {
+  text-transform: underline;
+
+
+}
+
+.button {
+  @include button-style($primary-color,
+  darken ($primary-color, 10), $white);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: rem-calc(16);
+  margin: rem-calc(20 0);
+  border-radius: rem-calc(10);
+
+}
+
+.buy-now--link {
+  text-decoration: underline;
+}
+
+.terms-and-conditions--link {
+  color: #666;
+  text-decoration: underline;
+  font-size: rem-calc(13);
+}
